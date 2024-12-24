@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive To-Do List</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
+  <!-- To-Do List Container -->
+  <div class="bg-white shadow-lg rounded-lg w-full max-w-lg p-6">
+    <!-- Header -->
+    <h1 class="text-3xl font-bold text-center mb-6">To-Do List</h1>
+
+    <!-- Input Section -->
+    <div class="flex flex-col sm:flex-row items-center gap-4 mb-6">
+      <input 
+        type="text" 
+        id="todo-input" 
+        placeholder="Enter a new task" 
+        class="flex-1 border border-gray-900 rounded-md px-4 py-2 focus:outline-none focus:ring focus:ring-blue-300"
+      />
+      <button 
+        id="add-btn" 
+        class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition w-full sm:w-auto"
+      >
+        Add
+      </button>
+    </div>
+
+    <!-- To-Do List -->
+    <ul id="todo-list" class="space-y-4">
+      <!-- To-Do items will appear here -->
+    </ul>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
